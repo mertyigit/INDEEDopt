@@ -43,13 +43,13 @@ def error_output_bf(number_of_parameters, parameters_file_name):
         try:
             
             file.seek(0)
-            error = file.read(12)
+            error_bf = file.read(12)
             
             #file2.seek(20)
-            file2.write("\n TOTAL ERROR: " + error.rjust(18))
+            file2.write("\n TOTAL ERROR: " + error_bf.rjust(18))
         
         finally:
             file.close()
     except IOError:
         pass
-    return error
+    return error_bf

@@ -62,5 +62,5 @@ def best_error_print(length, bn):
     file.close()
     
 
-    return 1
+    return sortedd.loc[:, 'error'].iloc[0]
     
