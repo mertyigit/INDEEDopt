@@ -38,7 +38,7 @@ def local_data_generator(width, length, bn):
     boundaries = pd.read_csv(os.path.join('.', "params-ml"), sep='\s+', header=None)
     if not os.path.exists('params-ml'):
         print('params-ml file cannot be found')
-    print(sortedd.loc[:, ['parameter-{}'.format(i) for i in range(0,sortedd.shape[1]-3)]].iloc[0])
+    print(sortedd.loc[:, ['parameter-{}'.format(i) for i in range(0,sortedd.shape[1]-2)]].iloc[0])
     params = np.zeros((bn, length, 6))
     print("Best "+str(bn)+" error values: ")
     
