@@ -170,8 +170,11 @@ def bruteforce(param_size, num_prop, file_name, best_value, scan_width, iteratio
             test_folder_name = 'test-'+ str(nn)
             reaxff_error = prepare_test_folder(nn, c[0], param_size, test_folder_name)
             if float(reaxff_error) < best_value:
-                best_value=reaxff_error
+                best_value=float(reaxff_error)
                 best_point=c
+            else:
+                os.system('rm -r '+test_folder_name)
+                
             print("BEST VALUE: "+str(best_value))
             print("BEST POINT: "+str(best_point))
             nn = nn + 1
