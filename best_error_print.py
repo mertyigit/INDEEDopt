@@ -54,7 +54,7 @@ def best_error_print(length, bn):
     file = open("best_error.dat","a+")
     file.write(str(sortedd.loc[:, 'error'].iloc[0]) + "\n")
     file.close()
-    
+    pd.set_option('display.max_rows', 1000)
     print("best point: ")
     print((sortedd.loc[:, ['parameter-{}'.format(i) for i in range(0,sortedd.shape[1]-2)]].iloc[0]))
     file = open("best_point.dat","w+")
