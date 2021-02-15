@@ -72,9 +72,9 @@ def prepare_data_set_error(initial_file_number):
                     try:    
                     
                         for i in range(0, number_of_training_element):    
-                            total_error ="{:.6f}".format(((error[i][1]-error[i][0])/error[i][2])**2)
+                            total_error ="{:.2f}".format(((error[i][1]-error[i][0])/error[i][2])**2)
                             #total_error =(((error[i][1]-error[i][0])/error[i][2])**2)
-                            file2.write(str(i).rjust(10)+str(error[i][0]).rjust(12)+str(error[i][1]).rjust(12)+str(error[i][2]).rjust(12)+str(total_error).rjust(22)+"\n")
+                            file2.write(str(i).rjust(10)+str(error[i][0]).rjust(12)+str(error[i][1]).rjust(12)+str(error[i][2]).rjust(12)+str(total_error).rjust(40)+"\n")
                             
                     finally:
                         file2.close()
