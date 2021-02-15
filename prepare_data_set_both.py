@@ -1,3 +1,5 @@
+## Last Updated: Feb 15 2021 - to avoid output error in cases that the user assigns very large parameter ranges
+
 import os
 import shutil
 from collections import defaultdict
@@ -36,7 +38,7 @@ def prepare_data_set_error(initial_file_number):
                            try:
                                error[i].append(float(file.read(11)))
                            except ValueError:
-                               error[i].append(99999999999)
+                               error[i].append(99999999)
                        
                            #Quantum Chemical value
                            file.seek(position+73)
@@ -71,8 +73,8 @@ def prepare_data_set_error(initial_file_number):
                     
                         for i in range(0, number_of_training_element):    
                             
-                            total_error ="{:.6f}".format(((error[i][1]-error[i][0])/error[i][2])**2)
-                            file2.write(str(i).rjust(10)+str(error[i][0]).rjust(12)+str(error[i][1]).rjust(12)+str(error[i][2]).rjust(12)+str(total_error).rjust(20)+"\n")
+                            total_error =(((error[i][1]-error[i][0])/error[i][2])**2)
+                            file2.write(str(i).rjust(10)+str(error[i][0]).rjust(12)+str(error[i][1]).rjust(12)+str(error[i][2]).rjust(12)+str(total_error).rjust(22)+"\n")
                             
                     finally:
                         file2.close()
