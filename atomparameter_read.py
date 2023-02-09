@@ -1,6 +1,6 @@
 
 def atomparameter_read(type, parameter):
-    """Assigns values to the atom parameters part of the force field file. The noe is the number of elements"""
+    """Assigns values to the atom parameters part of the force field file. The noe is the number of elements."""
     
     try:
         file = open("ffield","r+")
