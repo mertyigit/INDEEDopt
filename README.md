@@ -1,6 +1,6 @@
 # INDEEDopt: INitial DEsign Enhanced Deep learning OPTimization framework for high dimensional ReaxFF force field parameterization
 
-![INDEEDopt Workflow Scheme](images/INDEEDopt_diagram.png)
+![INDEEDopt Workflow Scheme](images/INDEEDopt_diagram2.png)
 
 
 
