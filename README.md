@@ -2,9 +2,11 @@
 
 ![INDEEDopt Workflow Scheme](images/INDEEDopt_diagram.png)
 
-#### Due to time limitations in other projects, I won't be able to maintain this package. ####
+
 
 # UPDATES
+
+#### Due to time limitations in other projects, I won't be able to maintain this package. ####
 
 A common error that users of INDEEDopt face is the generation of lousy ffield files. The reason for that is the extra spaces in ffield file that are located in the "folder". Please clean all extra spaces after each line in ffield file.
 
