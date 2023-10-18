@@ -4,7 +4,7 @@
 
 
 [![Python](https://img.shields.io/badge/Python-3.5%2B-blue)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.1%2B-orange)](https://pytorch.org/)
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 # UPDATES
